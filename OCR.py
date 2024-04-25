@@ -20,7 +20,7 @@ args = parser.parse_args()
 
 
 # load alphabet
-with open('./data/alphabet.txt') as f:
+with open('./data/alphabet.txt', encoding='utf-8') as f:
     data = f.readlines()
     alphabet = [x.rstrip() for x in data]
     alphabet = ''.join(alphabet)
