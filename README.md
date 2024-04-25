@@ -1,5 +1,10 @@
 # CS585_chinese-ocr
+
+**Made by Hao Qi, Ziye Chen, Xi Chen**
+
 This project presents a Convolutional Recurrent Neural Network (CRNN) with an attention mechanism tailored for Chinese scene text recognition. It overcomes challenges such as variable illumination and text distortions. Enhanced by traditional computer graphics methods and deep learning, the model we built from scratch can precisely recognize single-line modern Chinese text, offering a foundation for multilingual text recognition assistant systems.
+
+![Frame.jpg](https://github.com/haoqi-ai/CS585_chinese-ocr/blob/main/README_image/Frame.png?)  
 
 # Run demo
 You can run the **main.py** directly, or on the command line.
