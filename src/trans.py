@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import find_peaks
 
-from helper import filter_component
+from src.helper import filter_component
 
 
 def to_grayscale(image):

@@ -6,7 +6,7 @@ import random
 import numpy as np
 import cv2
 
-from transform import transform
+from src.trans import transform
 
 
 class TextLineDataset(torch.utils.data.Dataset):
