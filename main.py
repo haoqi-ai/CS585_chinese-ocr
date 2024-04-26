@@ -5,6 +5,7 @@ from googletrans import Translator
 translator = Translator()
 import OCR 
 
+
 WIDTH = 760
 HEIGHT = 640
 IMAGE_WIDTH = int(WIDTH*0.3)
@@ -12,8 +13,7 @@ IMAGE_HEIGHT = int(HEIGHT*0.3)
 
 
 def MODEL_TEST(img):
-    return "this is a test!"
-
+    return "This is a test!"
 
 
 # def MODEL_MobileNet(img):
@@ -58,7 +58,7 @@ def MODEL_TEST(img):
 
 
 def upload_image():
-    print("HHHHHHHHHHHHHHHH")
+    # print("HHHHHHHHHHHHHHHH")
     filepath = filedialog.askopenfilename(filetypes=[("Image files", "*.jpg")]) #*.jpg;*.jpeg;*.png
     print(filepath)
     if filepath:
@@ -94,8 +94,7 @@ background_label = tk.Label(root, image=background_image)
 background_label.place(relx=0, rely=0, relwidth=0.3, relheight=1)
 
 # 3. put some introduction text
-
-introduction_text = "Optical Character Recognition(OCR) for CHN calligraphy"
+introduction_text = "Chinese OCR through a CRNN Architecture with Attention"
 intro_font = font.Font(family="Helvetica", size=15, weight="bold",)
 introduction_label = tk.Label(root, justify='left',text=introduction_text, wraplength=200, font=intro_font, fg='orange')
 introduction_label.place(relx=0.3, rely=0, relwidth=0.35, relheight=0.2)
@@ -134,5 +133,5 @@ upload_button.place(relx=0.42, rely=0.25, anchor='center')
 exit_button = tk.Button(root, text="exit", command=root.quit, bg='lightgreen')
 exit_button.place(relx=0.55, rely=0.25, anchor='center')
 
-# 6. run the window
+# 6. run
 root.mainloop()
