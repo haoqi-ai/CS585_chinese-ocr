@@ -16,7 +16,7 @@ python main.py
 
 # Train a new model
 
-* Download [Synthetic Chinese String Dataset](https://pan.baidu.com/s/1bHRP2eAcU8a7ff0n-VTX_A) with share code ***2anx***.  
+* Download [Synthetic Chinese String Dataset](https://github.com/senlinuc/caffe_ocr) on [Baidu Netdisk](https://pan.baidu.com/s/1bHRP2eAcU8a7ff0n-VTX_A) with share code ***2anx***.  
 
 * Create `train_list.txt` and `test_list.txt` as the following format:
 ```
