@@ -6,29 +6,28 @@ This project presents a Convolutional Recurrent Neural Network (CRNN) with an at
 
 ![Frame.jpg](https://github.com/haoqi-ai/CS585_chinese-ocr/blob/main/README_image/Frame.png?)  
 
-# Run demo
-You can run the **main.py** directly, or on the command line.
+# Run the demo
+You can run `main.py` directly, or using the command line.
 
-Asume your current work directory is "CS585_chinese-ocr"：  
+Assuming your current work directory is "CS585_chinese-ocr"：  
 ```bash
-python3 main.py
+python main.py
 ```
 
 # Train a new model
 
 * Download [Synthetic Chinese String Dataset](https://pan.baidu.com/s/1bHRP2eAcU8a7ff0n-VTX_A) with share code ***2anx***.  
 
-* Create **train_list.txt** and **test_list.txt** as follow format
+* Create `train_list.txt` and `test_list.txt` as the following format:
 ```
-path/50843500_2726670787.jpg 情笼罩在他们满是沧桑
-path/57724421_3902051606.jpg 心态的松弛决定了比赛
-path/52041437_3766953320.jpg 虾的鲜美自是不可待言
+<path_to_the_pictures> <ground_truth_characters>
+...
 ```
 You can use the "[data/build.py](https://github.com/haoqi-ai/CS585_chinese-ocr/blob/main/data/build.py)" script to create the two lists or finish it by yourself.
 ```
 cd data
-python3 convert_text_list.py SyntheticChineseStringDataset/train.txt > train_list.txt
-python3 convert_text_list.py SyntheticChineseStringDataset/test.txt > test_list.txt
+python build.py SyntheticChineseStringDataset/train.txt > train_list.txt
+python build.py SyntheticChineseStringDataset/test.txt > test_list.txt
 ```
 
 * Start training
